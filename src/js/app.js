@@ -97,7 +97,7 @@ App = {
                 console.log(error);
             }
 
-            var account = account[0];
+            var account = accounts[0];
 
             App.contracts.Adoption.deployed().then(function(instance) {
                 adoptionInstance = instance;

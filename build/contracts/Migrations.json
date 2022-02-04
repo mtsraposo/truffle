@@ -53,7 +53,7 @@
   "sourceMap": "66:352:1:-;;;113:10;90:33;;;;;;;;;;;;;;;;;;;;66:352;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:1;;;;;;;",
   "deployedSourceMap": "66:352:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;313:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;313:103:1;;;;;;;;;;;;;;;;;:::i;:::-;;127:36;;;;:::o;90:33::-;;;;;;;;;;;;;:::o;313:103::-;225:5;;;;;;;;;;;211:19;;:10;:19;;;196:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:9;375:24;:36;;;;313:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "/Users/ninjagordo/dev/truffle/contracts/Migrations.sol",
+  "sourcePath": "/Users/ninjagordo/dev/truffle_tutorial/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -917,10 +917,16 @@
       "links": {},
       "address": "0x26b918be6c5fC170a6Baa9e742eDE45b9C63c15F",
       "transactionHash": "0x7b84616bcb10209e5555349fe99b09c1e587ecbc81569b8cec2ec96ce6fdcfc1"
+    },
+    "1643984007727": {
+      "events": {},
+      "links": {},
+      "address": "0xf2afb90B9F456108ca34975B89A9F953f0B1319D",
+      "transactionHash": "0x37fc7530441e5dc00bc99dbe54dd77db1d96a0b74cc61a01e0cc98027bad9167"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-02-04T00:59:33.067Z",
+  "updatedAt": "2022-02-04T14:16:08.369Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
